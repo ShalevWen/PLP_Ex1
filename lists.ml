@@ -4,7 +4,6 @@ let rec sum_list l = match l with
 
 let rec compress l = match l with
   | [] -> []
-  | h::[] -> [h]
   | h::t -> (match t with
     | [] -> [h]
     | h2::t2 -> 
